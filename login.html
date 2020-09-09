@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>GATE Academy | Login</title>
+</head>
+
+<body>
+    <main class="log-in-main">
+        <div class="login-form">
+            <img src="./gate-logo.png" alt="gate academy" class="login-form__logo" />
+            <p class="login-form__text">Log in to your account</p>
+            <form action="#" class="form">
+                <div class="form__input-container">
+                    <input type="email" name="email" id="email" class="form__input" required placeholder=" " />
+                    <label for="email" class="form__label"><svg class="icon">
+                <use xlink:href="./sprite.svg#icon-user"></use>
+              </svg>
+              <span>Email Address</span></label
+            >
+          </div>
+          <div class="form__input-container">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="8"
+              required
+              class="form__input"
+              placeholder=" "
+            />
+            <label for="password" class="form__label"
+              ><svg class="icon">
+                <use xlink:href="./sprite.svg#icon-key"></use>
+              </svg>
+              <span>Password</span></label
+            >
+          </div>
+          <div class="form__input-container form__input-container--centered">
+            <button type="submit" class="btn">Log In</button>
+          </div>
+        </form>
+        <a href="#" class="login-form__forgot-text mt-4">Forgot Password?</a>
+      </div>
+    </main>
+  </body>
+</html>
