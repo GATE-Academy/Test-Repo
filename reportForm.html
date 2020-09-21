@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Progress Report Form</title>
+</head>
+
+<body>
+    <main class="report-main">
+        <form action="#" class="reportForm">
+            <div class="reportForm__group">
+                <div class="reportForm__input-container">
+                    <label for="familyName">Family Name</label>
+                    <select name="familyName" id="familyName">
+              <option value="Boro">Boro</option>
+              <option value="Joseph">Joseph</option>
+            </select>
+                </div>
+                <div class="reportForm__input-container">
+                    <label for="wardName">Ward Name</label>
+                    <select name="wardName" id="wardName">
+              <option value="Boro">Boro</option>
+              <option value="Joseph">Joseph</option>
+            </select>
+                </div>
+            </div>
+            <div class="reportForm__group reportForm__group--resize">
+                <div class="reportForm__input-container reportForm__input-container--resize">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" name="startDate" id="startDate" />
+                </div>
+                <div class="reportForm__input-container reportForm__input-container--resize">
+                    <label for="endDate">End Date</label>
+                    <input type="date" name="endDate" id="endDate" />
+                </div>
+                <div class="reportForm__input-container reportForm__input-container--resize">
+                    <label for="numOfClasses">No. of Classes</label>
+                    <input type="number" name="numOfClasses" id="numOfClasses" />
+                </div>
+            </div>
+            <div class="reportForm__group reportForm__group--column">
+                <h2 class="reportForm__group__heading">
+                    Topics Learnt (AS = Assignment Score, TS = Test Score)
+                </h2>
+                <div class="reportForm__group reportForm__group--column reportForm__group--subjects reportForm__group--small-margin-bottom">
+                    <div class="reportForm__input-container reportForm__input-container--row">
+                        <label for="subject">Subject:</label>
+                        <input type="text" name="subject" id="subject" />
+                    </div>
+                    <div class="reportForm__group reportForm__group--small-margin-bottom">
+                        <div class="reportForm__input-container reportForm__input-container--long">
+                            <input type="text" name="topic1" id="topic1" placeholder="Topic" />
+                        </div>
+                        <div class="reportForm__input-container">
+                            <input type="number " name="assignment1 " id="assignment1 " placeholder="AS " />
+                        </div>
+                        <div class="reportForm__input-container">
+                            <input type="number " name="test1 " id="test1 " placeholder="TS " />
+                        </div>
+                    </div>
+                    <div class="reportForm__group reportForm__group--small-margin-bottom">
+                        <div class="reportForm__input-container reportForm__input-container--long">
+                            <input type="text" name="topic1" id="topic1" placeholder="Topic" />
+                        </div>
+                        <div class="reportForm__input-container">
+                            <input type="number " name="assignment1 " id="assignment1 " placeholder="AS " />
+                        </div>
+                        <div class="reportForm__input-container">
+                            <input type="number " name="test1 " id="test1 " placeholder="TS " />
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn--small reportForm__group__button">
+              Add Topic
+            </button>
+                </div>
+                <div class="reportForm__group reportForm__group--column reportForm__group--subjects reportForm__group--small-margin-bottom">
+                    <div class="reportForm__input-container reportForm__input-container--row">
+                        <label for="subject">Subject:</label>
+                        <input type="text" name="subject" id="subject" />
+                    </div>
+                    <div class="reportForm__group reportForm__group--small-margin-bottom">
+                        <div class="reportForm__input-container reportForm__input-container--long">
+                            <input type="text" name="topic1" id="topic1" placeholder="Topic" />
+                        </div>
+                        <div class="reportForm__input-container">
+                            <input type="number " name="assignment1 " id="assignment1 " placeholder="AS " />
+                        </div>
+                        <div class="reportForm__input-container">
+                            <input type="number " name="test1 " id="test1 " placeholder="TS " />
+                        </div>
+                    </div>
+                    <div class="reportForm__group reportForm__group--small-margin-bottom">
+                        <div class="reportForm__input-container reportForm__input-container--long">
+                            <input type="text" name="topic1" id="topic1" placeholder="Topic" />
+                        </div>
+                        <div class="reportForm__input-container">
+                            <input type="number " name="assignment1 " id="assignment1 " placeholder="AS " />
+                        </div>
+                        <div class="reportForm__input-container">
+                            <input type="number " name="test1 " id="test1 " placeholder="TS " />
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn--small reportForm__group__button">
+              Add Topic
+            </button>
+                </div>
+                <button type="button" class="btn btn--small reportForm__group__button mr-2">
+            Add Subject
+          </button>
+            </div>
+            <div class="reportForm__group reportForm__group--column">
+                <h2 class="reportForm__group__heading">Challenges Faced</h2>
+                <div class="reportForm__group reportForm__group--small-margin-bottom">
+                    <div class="reportForm__input-container">
+                        <textarea name="challenges " id="challenges " cols="30 " rows="5" placeholder="Challenges "></textarea>
+                    </div>
+                </div>
+                <div class="reportForm__group reportForm__group--small-margin-bottom">
+                    <div class="reportForm__input-container reportForm__input-container--row">
+                        <label for="noChallenges">No challenges</label>
+                        <input type="checkbox" name="noChallenges" id="noChallenges" />
+                    </div>
+                </div>
+            </div>
+            <div class="reportForm__group reportForm__group--column">
+                <h2 class="reportForm__group__heading">Challenges Faced</h2>
+                <div class="reportForm__group reportForm__group--small-margin-bottom">
+                    <div class="reportForm__input-container">
+                        <textarea name="challenges " id="challenges " cols="30 " rows="5" placeholder="Challenges "></textarea>
+                    </div>
+                </div>
+                <div class="reportForm__group">
+                    <div class="reportForm__input-container reportForm__input-container--row">
+                        <label for="noChallenges">No challenges</label>
+                        <input type="checkbox" name="noChallenges" id="noChallenges" />
+                    </div>
+                </div>
+            </div>
+            <div class="reportForm__group reportForm__group--centered reportForm__group--small-margin-bottom">
+                <button class="btn" type="button">Send Report</button>
+                <button class="btn" type="submit">Preview Report</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
