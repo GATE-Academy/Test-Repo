@@ -212,10 +212,9 @@ h6 {
   position: fixed;
   top: 9rem;
   left: 0;
-  min-height: 100vh;
+  height: 100vh;
   color: #fff;
   font-size: 2rem;
-  overflow: auto;
   transition-property: opacity, visibility, width;
   transition-duration: 0.1s; }
   @media only screen and (max-width: 62.5em) {
@@ -228,9 +227,14 @@ h6 {
     opacity: 1;
     visibility: visible;
     z-index: 10; }
+  .sidebar__container {
+    max-height: 75vh;
+    overflow: auto; }
   .sidebar__nav {
     padding: 1rem 0;
     position: relative; }
+    .sidebar__nav:last-child {
+      margin-bottom: 3rem; }
     .sidebar__nav::after {
       content: "";
       position: absolute;
