@@ -228,7 +228,7 @@ h6 {
     visibility: visible;
     z-index: 10; }
   .sidebar__container {
-    max-height: 60vh;
+    max-height: 75%;
     overflow: auto; }
   .sidebar__nav {
     padding: 1rem 0;
