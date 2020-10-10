@@ -235,7 +235,7 @@ h6 {
     padding: 1rem 0;
     position: relative; }
     .sidebar__nav:last-child {
-      margin-bottom: 3rem; }
+      margin-bottom: 6rem; }
     .sidebar__nav::after {
       content: "";
       position: absolute;
