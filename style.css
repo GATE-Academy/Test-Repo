@@ -23,6 +23,9 @@ a {
   text-decoration: none;
   color: currentColor; }
 
+.overview__body {
+  background-color: #eee; }
+
 h1,
 h2,
 h3,
@@ -107,6 +110,24 @@ h6 {
   height: 1.5rem;
   fill: #fff; }
 
+.icon--black {
+  fill: #040404; }
+
+.icon--medium {
+  height: 2rem;
+  width: 2rem; }
+
+.icon--big {
+  height: 2.5rem;
+  width: 2.5rem; }
+
+.icon--bigger {
+  height: 3rem;
+  width: 3rem; }
+
+.icon--active {
+  fill: #fcec04; }
+
 .reportForm {
   width: 100%; }
   .reportForm__group {
@@ -185,6 +206,168 @@ h6 {
       .reportForm__input-container--resize:not(:last-child) {
         margin-right: 0;
         margin-bottom: 2rem; } }
+
+.sidebar {
+  background-color: #2c94fc;
+  position: fixed;
+  top: 9rem;
+  left: 0;
+  min-height: 100vh;
+  color: #fff;
+  font-size: 2rem;
+  overflow: auto;
+  transition-property: opacity, visibility, width;
+  transition-duration: 0.1s; }
+  @media only screen and (max-width: 62.5em) {
+    .sidebar {
+      width: 0;
+      opacity: 0;
+      visibility: hidden; } }
+  .sidebar.active {
+    width: 28.09rem;
+    opacity: 1;
+    visibility: visible;
+    z-index: 10; }
+  .sidebar__nav {
+    padding: 1rem 0;
+    position: relative; }
+    .sidebar__nav::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #024a92; }
+  .sidebar__item__title {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer; }
+    .sidebar__item__title > span {
+      margin: 0 3rem; }
+      .sidebar__item__title > span + svg {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.1s; }
+  .sidebar__nav__dropdown.active .sidebar__dropdown {
+    height: 100%;
+    visibility: visible; }
+  .sidebar__nav__dropdown.active .sidebar__item__title > svg:last-of-type {
+    transform: translateY(-50%) rotate(90deg); }
+  .sidebar__dropdown {
+    position: relative;
+    height: 0;
+    list-style: none;
+    background-color: #024a92;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 4rem;
+    font-size: 1.7rem;
+    margin-bottom: -1.5rem;
+    transition: visibility, height;
+    z-index: -3; }
+    .sidebar__dropdown__item {
+      padding: 1rem 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center; }
+      .sidebar__dropdown__item > span {
+        margin-left: 1rem; }
+      .sidebar__dropdown__item:first-child {
+        margin-left: -2.5rem; }
+
+.overview__header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 2rem 6rem;
+  box-shadow: 0 0.01px 2.5px #040404;
+  justify-content: space-between; }
+
+.overview__container {
+  display: flex; }
+
+.overview__logo {
+  height: 5rem; }
+  @media only screen and (max-width: 62.5em) {
+    .overview__logo {
+      margin: 0 auto; } }
+
+.overview__user {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 25em) {
+    .overview__user {
+      display: none; } }
+
+.overview__username {
+  margin-left: 1rem; }
+
+.overview__logout {
+  display: flex;
+  align-items: center; }
+  .overview__logout__text {
+    margin-left: 1rem; }
+
+.hamburger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  height: 3px;
+  background-color: #040404;
+  z-index: 8;
+  transition: background-color 0.1s; }
+  .hamburger::before, .hamburger::after {
+    content: "";
+    background-color: #040404;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: transform 0.2s, top 0.2s; }
+  .hamburger::before {
+    top: -1rem;
+    left: 0; }
+  .hamburger::after {
+    top: 1rem;
+    left: 0; }
+  .hamburger__container {
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    transform: translateY(-50%);
+    background-color: transparent;
+    height: 2.5rem;
+    width: 3rem;
+    z-index: 8;
+    cursor: pointer;
+    transition-property: visibility opacity;
+    transition-duration: 0.1s;
+    visibility: hidden;
+    opacity: 0; }
+    @media only screen and (max-width: 62.5em) {
+      .hamburger__container {
+        visibility: visible;
+        opacity: 1; } }
+  .hamburger__container.active .hamburger::before {
+    top: 0;
+    transform: rotate(45deg); }
+  .hamburger__container.active .hamburger {
+    background-color: transparent; }
+  .hamburger__container.active .hamburger::after {
+    top: 0;
+    transform: rotate(135deg); }
 
 .log-in-main {
   height: 100vh;
