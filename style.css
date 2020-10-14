@@ -500,7 +500,8 @@ h6 {
   font-weight: 600; }
 
 .overview__detail__heading {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  text-align: center; }
 
 .overview__user__details__card {
   border-radius: 5px;
@@ -512,18 +513,43 @@ h6 {
   display: flex;
   align-items: center;
   width: 100%; }
+  @media only screen and (max-width: 31.25em) {
+    .overview__user__form__group {
+      align-items: initial;
+      flex-direction: column;
+      justify-content: center; } }
+  .overview__user__form__group--row {
+    flex-direction: row; }
+    @media only screen and (max-width: 31.25em) {
+      .overview__user__form__group--row {
+        margin-top: 2.5rem; } }
   .overview__user__form__group:not(:last-child) {
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 31.25em) {
+      .overview__user__form__group:not(:last-child) {
+        margin-bottom: 0rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .overview__user__form__group > button {
+      padding: 1rem 2.5rem; } }
   .overview__user__form__group > button:not(:last-child) {
     margin-right: 2rem; }
 
 .overview__user__form__input-container {
   position: relative;
   flex: auto; }
+  @media only screen and (max-width: 31.25em) {
+    .overview__user__form__input-container {
+      margin-bottom: 1.5rem; } }
   .overview__user__form__input-container--half-width {
     width: 50%; }
+    @media only screen and (max-width: 31.25em) {
+      .overview__user__form__input-container--half-width {
+        width: 100%; } }
   .overview__user__form__input-container:not(:last-child) {
     margin-right: 1.5rem; }
+    @media only screen and (max-width: 31.25em) {
+      .overview__user__form__input-container:not(:last-child) {
+        margin-right: 0; } }
 
 .overview__user__form__label {
   pointer-events: none;
