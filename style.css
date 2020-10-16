@@ -633,7 +633,7 @@ h6 {
   border-bottom-right-radius: 8px;
   box-shadow: 0 0.8px 1.6px rgba(4, 4, 4, 0.5);
   margin-top: 5px;
-  transition-property: top, opacity;
+  transition-property: top, opacity, visibility;
   transition-duration: 0.2s; }
 
 .report__full.active {
@@ -693,7 +693,7 @@ h6 {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0.8px 1.6px rgba(4, 4, 4, 0.5);
-  transition-property: top, opacity;
+  transition-property: top, opacity, visibility;
   transition-duration: 0.2s; }
   .report__comment__container.active {
     position: relative;
