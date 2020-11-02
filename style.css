@@ -403,6 +403,90 @@ h6 {
     top: 0;
     transform: rotate(135deg); }
 
+.search {
+  display: flex;
+  align-items: flex-start;
+  width: 95%;
+  margin: 0 auto; }
+  .search__input {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    width: 60%;
+    padding: 1rem;
+    border: 1.5px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 0.8px 1.6px rgba(4, 4, 4, 0.5);
+    margin-right: 1rem; }
+    .search__input:focus {
+      outline: none;
+      border: 1.5px solid #040404; }
+  .search__select-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 40%; }
+  .search__select {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    padding: 1rem;
+    border: 1.5px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 0.8px 1.6px rgba(4, 4, 4, 0.5); }
+    .search__select:focus {
+      outline: none;
+      border: 1.5px solid #040404; }
+    .search__select__label {
+      position: absolute;
+      top: -2.5rem;
+      left: 0; }
+
+.detail__overview {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  cursor: pointer;
+  box-shadow: 0 0.8px 1.6px rgba(4, 4, 4, 0.5);
+  transition: border-radius 0.2s; }
+  .detail__overview > svg {
+    transform: rotate(0);
+    transition: transform 0.15s; }
+  .detail__overview__title {
+    font-size: 1.7rem; }
+  .detail__overview.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+    .detail__overview.active > svg {
+      transform: rotate(90deg); }
+
+.detail__full {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  top: -2rem;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0rem 2rem;
+  background-color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 0.8px 1.6px rgba(4, 4, 4, 0.5);
+  margin-top: 5px;
+  transition-property: top, opacity, height, visibility, padding;
+  transition-duration: 0.2s; }
+  .detail__full.active {
+    top: 0;
+    height: auto;
+    overflow: auto;
+    opacity: 1;
+    visibility: visible;
+    padding: 1rem 2rem; }
+
 .log-in-main {
   height: 100vh;
   background-image: url("../img/woman-and-child-in-aquarium.jpg"), linear-gradient(to right, yellow, green);
@@ -723,3 +807,64 @@ h6 {
 .reports__container {
   width: 100%;
   margin-bottom: 2.5rem; }
+
+.clients__info {
+  background-color: #fff;
+  box-shadow: 0 0.8px 1.6px rgba(4, 4, 4, 0.5);
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  display: grid;
+  grid-template-columns: 20rem min-content;
+  grid-gap: 2rem;
+  align-content: center; }
+  .clients__info__container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem; }
+    @media only screen and (max-width: 46.875em) {
+      .clients__info__container {
+        flex-direction: column;
+        align-items: center; } }
+  .clients__info:not(:last-child) {
+    margin-right: 2rem; }
+    @media only screen and (max-width: 46.875em) {
+      .clients__info:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 2.5rem; } }
+  .clients__info__icon {
+    grid-row: 1/-1;
+    grid-column: 2 / span 1;
+    width: 8rem;
+    height: 8rem;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0.8px 1.6px rgba(4, 4, 4, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(30%); }
+  .clients__info__heading {
+    font-size: 2rem;
+    font-weight: 600; }
+  .clients__info__number {
+    font-size: 2rem;
+    font-weight: 600; }
+
+.clients__search-container {
+  margin-bottom: 5rem; }
+
+.client__wrapper {
+  width: 95%;
+  margin: 0 auto; }
+
+.client__detail {
+  margin-bottom: 1.5rem;
+  font-weight: 600; }
+  .client__detail > span {
+    font-weight: 400; }
+
+.client__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem; }

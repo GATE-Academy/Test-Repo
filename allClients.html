@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tutor Overview</title>
+</head>
+
+<body class="overview__body">
+    <header class="overview__header">
+        <div class="hamburger__container">
+            <div class="hamburger"></div>
+        </div>
+        <img src="./gate-logo.png" alt="GATE Academy" class="overview__logo" />
+        <div class="overview__container">
+            <div class="overview__user">
+                <svg class="icon--medium icon--black">
+            <use xlink:href="./sprite.svg#icon-user-1"></use>
+          </svg>
+                <p class="overview__username">Hi, Joseph</p>
+            </div>
+            <div class="overview__logout">
+                <svg class="icon--medium icon--black">
+            <use xlink:href="./sprite.svg#icon-log-out"></use>
+          </svg>
+                <p class="overview__logout__text">Logout</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar__container">
+            <div class="sidebar__nav">
+                <div class="sidebar__item__title">
+                    <svg class="icon icon--big icon--active">
+              <use xlink:href="./sprite.svg#icon-list2"></use>
+            </svg>
+                    <span>Overview</span>
+                </div>
+            </div>
+            <div class="sidebar__nav sidebar__nav__dropdown">
+                <div class="sidebar__item__title">
+                    <svg class="icon icon--big">
+              <use xlink:href="./sprite.svg#icon-report"></use>
+            </svg>
+                    <span>Progress Reports</span>
+                    <svg class="icon icon--medium">
+              <use xlink:href="./sprite.svg#icon-keyboard_arrow_right"></use>
+            </svg>
+                </div>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown__item">
+                        <svg class="icon icon--medium">
+                <use
+                  xlink:href="./sprite.svg#icon-keyboard_arrow_right"
+                ></use></svg
+              ><span>All Reports</span>
+            </li>
+            <li class="sidebar__dropdown__item">
+              <svg class="icon">
+                <use xlink:href="./sprite.svg#icon-pencil"></use></svg
+              ><span>Create Report</span>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__nav sidebar__nav__dropdown">
+          <div class="sidebar__item__title">
+            <svg class="icon icon--big">
+              <use xlink:href="./sprite.svg#icon-meeting"></use>
+            </svg>
+                        <span>Sessions</span>
+                        <svg class="icon icon--medium">
+              <use xlink:href="./sprite.svg#icon-keyboard_arrow_right"></use>
+            </svg>
+            </div>
+            <ul class="sidebar__dropdown">
+                <li class="sidebar__dropdown__item">
+                    <svg class="icon icon--medium">
+                <use
+                  xlink:href="./sprite.svg#icon-keyboard_arrow_right"
+                ></use></svg
+              ><span>All Sessions</span>
+            </li>
+            <li class="sidebar__dropdown__item">
+              <svg class="icon">
+                <use xlink:href="./sprite.svg#icon-camera"></use>
+              </svg>
+                    <span>Record Session</span>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <main class="overview__main">
+        <h2 class="overview__title">All Clients</h2>
+
+        <div class="clients__info__container">
+            <div class="clients__info">
+                <p class="clients__info__heading">Total</p>
+                <p class="clients__info__number">144</p>
+                <div class="clients__info__icon">
+                    <svg class="icon icon--black icon--image">
+              <use xlink:href="./sprite.svg#icon-consumer"></use>
+            </svg>
+                </div>
+            </div>
+            <div class="clients__info">
+                <p class="clients__info__heading">Active</p>
+                <p class="clients__info__number">44</p>
+                <div class="clients__info__icon">
+                    <svg class="icon icon--black icon--image">
+              <use xlink:href="./sprite.svg#icon-consumer"></use>
+            </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="clients__search-container">
+            <h3 class="overview__subtitle">Search</h3>
+            <form action="#" class="search">
+                <input type="search" name="search" id="search" class="search__input" placeholder="Type here..." />
+                <div class="search__select-container">
+                    <label for="searchBy" class="search__select__label">Search By</label
+            >
+            <select name="searchBy" id="searchBy" class="search__select">
+              <option value="surname">Surname</option>
+              <option value="wardName">Ward Name</option>
+              <option value="email">Email</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <div class="clients__container">
+        <h3 class="overview__subtitle">Recently Added</h3>
+        <div class="client__wrapper">
+          <div class="detail__overview">
+            <p class="detail__overview__title">
+              The Boro's (Joseph, Omokugbo,...)
+            </p>
+            <svg class="icon--medium icon--black">
+              <use xlink:href="./sprite.svg#icon-cheveron-outline-right"></use>
+            </svg>
+          </div>
+          <div class="detail__full">
+            <p class="client__detail">
+              Address:
+              <span
+                >19 Jadesola Oshodi Street, Aguda, Surulere, Lagos,
+                Nigeria</span
+              >
+            </p>
+            <p class="client__detail">
+              Primary Email: <span>omokugbobr@gmail.com</span>
+            </p>
+            <p class="client__detail">
+              Secondary Email: <span>omokugboboro@hotmail.com</span>
+            </p>
+            <p class="client__detail">
+              Primary Phone Number: <span>09068982847</span>
+            </p>
+            <p class="client__detail">
+              Secondary Phone Number: <span>08109507692</span>
+            </p>
+            <p class="client__detail">
+              Wards: <span>Joseph (Year 4), Moses (SS2), Josh (Nursery 1)</span>
+            </p>
+            <div class="client__buttons">
+              <button
+                class="btn btn--small-border client__button"
+                type="button"
+              >
+                <svg class="icon icon--black icon--medium">
+                  <use xlink:href="./sprite.svg#icon-create"></use>
+                </svg>
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="client__wrapper">
+          <div class="detail__overview">
+            <p class="detail__overview__title">
+              The Boro's (Joseph, Omokugbo,...)
+            </p>
+            <svg class="icon--medium icon--black">
+              <use xlink:href="./sprite.svg#icon-cheveron-outline-right"></use>
+            </svg>
+          </div>
+          <div class="detail__full">
+            <p class="client__detail">
+              Address:
+              <span
+                >19 Jadesola Oshodi Street, Aguda, Surulere, Lagos,
+                Nigeria</span
+              >
+            </p>
+            <p class="client__detail">
+              Primary Email: <span>omokugbobr@gmail.com</span>
+            </p>
+            <p class="client__detail">
+              Secondary Email: <span>omokugboboro@hotmail.com</span>
+            </p>
+            <p class="client__detail">
+              Primary Phone Number: <span>09068982847</span>
+            </p>
+            <p class="client__detail">
+              Secondary Phone Number: <span>08109507692</span>
+            </p>
+            <p class="client__detail">
+              Wards: <span>Joseph (Year 4), Moses (SS2), Josh (Nursery 1)</span>
+            </p>
+            <div class="client__buttons">
+              <button
+                class="btn btn--small-border client__button"
+                type="button"
+              >
+                <svg class="icon icon--black icon--medium">
+                  <use xlink:href="./sprite.svg#icon-create"></use>
+                </svg>
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="client__wrapper">
+          <div class="detail__overview">
+            <p class="detail__overview__title">
+              The Boro's (Joseph, Omokugbo,...)
+            </p>
+            <svg class="icon--medium icon--black">
+              <use xlink:href="./sprite.svg#icon-cheveron-outline-right"></use>
+            </svg>
+          </div>
+          <div class="detail__full">
+            <p class="client__detail">
+              Address:
+              <span
+                >19 Jadesola Oshodi Street, Aguda, Surulere, Lagos,
+                Nigeria</span
+              >
+            </p>
+            <p class="client__detail">
+              Primary Email: <span>omokugbobr@gmail.com</span>
+            </p>
+            <p class="client__detail">
+              Secondary Email: <span>omokugboboro@hotmail.com</span>
+            </p>
+            <p class="client__detail">
+              Primary Phone Number: <span>09068982847</span>
+            </p>
+            <p class="client__detail">
+              Secondary Phone Number: <span>08109507692</span>
+            </p>
+            <p class="client__detail">
+              Wards: <span>Joseph (Year 4), Moses (SS2), Josh (Nursery 1)</span>
+            </p>
+            <div class="client__buttons">
+              <button
+                class="btn btn--small-border client__button"
+                type="button"
+              >
+                <svg class="icon icon--black icon--medium">
+                  <use xlink:href="./sprite.svg#icon-create"></use>
+                </svg>
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="client__wrapper">
+          <div class="detail__overview">
+            <p class="detail__overview__title">
+              The Boro's (Joseph, Omokugbo,...)
+            </p>
+            <svg class="icon--medium icon--black">
+              <use xlink:href="./sprite.svg#icon-cheveron-outline-right"></use>
+            </svg>
+          </div>
+          <div class="detail__full">
+            <p class="client__detail">
+              Address:
+              <span
+                >19 Jadesola Oshodi Street, Aguda, Surulere, Lagos,
+                Nigeria</span
+              >
+            </p>
+            <p class="client__detail">
+              Primary Email: <span>omokugbobr@gmail.com</span>
+            </p>
+            <p class="client__detail">
+              Secondary Email: <span>omokugboboro@hotmail.com</span>
+            </p>
+            <p class="client__detail">
+              Primary Phone Number: <span>09068982847</span>
+            </p>
+            <p class="client__detail">
+              Secondary Phone Number: <span>08109507692</span>
+            </p>
+            <p class="client__detail">
+              Wards: <span>Joseph (Year 4), Moses (SS2), Josh (Nursery 1)</span>
+            </p>
+            <div class="client__buttons">
+              <button
+                class="btn btn--small-border client__button"
+                type="button"
+              >
+                <svg class="icon icon--black icon--medium">
+                  <use xlink:href="./sprite.svg#icon-create"></use>
+                </svg>
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="client__wrapper">
+          <div class="detail__overview">
+            <p class="detail__overview__title">
+              The Boro's (Joseph, Omokugbo,...)
+            </p>
+            <svg class="icon--medium icon--black">
+              <use xlink:href="./sprite.svg#icon-cheveron-outline-right"></use>
+            </svg>
+          </div>
+          <div class="detail__full">
+            <p class="client__detail">
+              Address:
+              <span
+                >19 Jadesola Oshodi Street, Aguda, Surulere, Lagos,
+                Nigeria</span
+              >
+            </p>
+            <p class="client__detail">
+              Primary Email: <span>omokugbobr@gmail.com</span>
+            </p>
+            <p class="client__detail">
+              Secondary Email: <span>omokugboboro@hotmail.com</span>
+            </p>
+            <p class="client__detail">
+              Primary Phone Number: <span>09068982847</span>
+            </p>
+            <p class="client__detail">
+              Secondary Phone Number: <span>08109507692</span>
+            </p>
+            <p class="client__detail">
+              Wards: <span>Joseph (Year 4), Moses (SS2), Josh (Nursery 1)</span>
+            </p>
+            <div class="client__buttons">
+              <button
+                class="btn btn--small-border client__button"
+                type="button"
+              >
+                <svg class="icon icon--black icon--medium">
+                  <use xlink:href="./sprite.svg#icon-create"></use>
+                </svg>
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="client__wrapper">
+          <div class="detail__overview">
+            <p class="detail__overview__title">
+              The Boro's (Joseph, Omokugbo,...)
+            </p>
+            <svg class="icon--medium icon--black">
+              <use xlink:href="./sprite.svg#icon-cheveron-outline-right"></use>
+            </svg>
+          </div>
+          <div class="detail__full">
+            <p class="client__detail">
+              Address:
+              <span
+                >19 Jadesola Oshodi Street, Aguda, Surulere, Lagos,
+                Nigeria</span
+              >
+            </p>
+            <p class="client__detail">
+              Primary Email: <span>omokugbobr@gmail.com</span>
+            </p>
+            <p class="client__detail">
+              Secondary Email: <span>omokugboboro@hotmail.com</span>
+            </p>
+            <p class="client__detail">
+              Primary Phone Number: <span>09068982847</span>
+            </p>
+            <p class="client__detail">
+              Secondary Phone Number: <span>08109507692</span>
+            </p>
+            <p class="client__detail">
+              Wards: <span>Joseph (Year 4), Moses (SS2), Josh (Nursery 1)</span>
+            </p>
+            <div class="client__buttons">
+              <button
+                class="btn btn--small-border client__button"
+                type="button"
+              >
+                <svg class="icon icon--black icon--medium">
+                  <use xlink:href="./sprite.svg#icon-create"></use>
+                </svg>
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="client__wrapper">
+          <div class="detail__overview">
+            <p class="detail__overview__title">
+              The Boro's (Joseph, Omokugbo,...)
+            </p>
+            <svg class="icon--medium icon--black">
+              <use xlink:href="./sprite.svg#icon-cheveron-outline-right"></use>
+            </svg>
+          </div>
+          <div class="detail__full">
+            <p class="client__detail">
+              Address:
+              <span
+                >19 Jadesola Oshodi Street, Aguda, Surulere, Lagos,
+                Nigeria</span
+              >
+            </p>
+            <p class="client__detail">
+              Primary Email: <span>omokugbobr@gmail.com</span>
+            </p>
+            <p class="client__detail">
+              Secondary Email: <span>omokugboboro@hotmail.com</span>
+            </p>
+            <p class="client__detail">
+              Primary Phone Number: <span>09068982847</span>
+            </p>
+            <p class="client__detail">
+              Secondary Phone Number: <span>08109507692</span>
+            </p>
+            <p class="client__detail">
+              Wards: <span>Joseph (Year 4), Moses (SS2), Josh (Nursery 1)</span>
+            </p>
+            <div class="client__buttons">
+              <button
+                class="btn btn--small-border client__button"
+                type="button"
+              >
+                <svg class="icon icon--black icon--medium">
+                  <use xlink:href="./sprite.svg#icon-create"></use>
+                </svg>
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="client__wrapper">
+          <div class="detail__overview">
+            <p class="detail__overview__title">
+              The Boro's (Joseph, Omokugbo,...)
+            </p>
+            <svg class="icon--medium icon--black">
+              <use xlink:href="./sprite.svg#icon-cheveron-outline-right"></use>
+            </svg>
+          </div>
+          <div class="detail__full">
+            <p class="client__detail">
+              Address:
+              <span
+                >19 Jadesola Oshodi Street, Aguda, Surulere, Lagos,
+                Nigeria</span
+              >
+            </p>
+            <p class="client__detail">
+              Primary Email: <span>omokugbobr@gmail.com</span>
+            </p>
+            <p class="client__detail">
+              Secondary Email: <span>omokugboboro@hotmail.com</span>
+            </p>
+            <p class="client__detail">
+              Primary Phone Number: <span>09068982847</span>
+            </p>
+            <p class="client__detail">
+              Secondary Phone Number: <span>08109507692</span>
+            </p>
+            <p class="client__detail">
+              Wards: <span>Joseph (Year 4), Moses (SS2), Josh (Nursery 1)</span>
+            </p>
+            <div class="client__buttons">
+              <button
+                class="btn btn--small-border client__button"
+                type="button"
+              >
+                <svg class="icon icon--black icon--medium">
+                  <use xlink:href="./sprite.svg#icon-create"></use>
+                </svg>
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="client__wrapper">
+          <div class="detail__overview">
+            <p class="detail__overview__title">
+              The Boro's (Joseph, Omokugbo,...)
+            </p>
+            <svg class="icon--medium icon--black">
+              <use xlink:href="./sprite.svg#icon-cheveron-outline-right"></use>
+            </svg>
+          </div>
+          <div class="detail__full">
+            <p class="client__detail">
+              Address:
+              <span
+                >19 Jadesola Oshodi Street, Aguda, Surulere, Lagos,
+                Nigeria</span
+              >
+            </p>
+            <p class="client__detail">
+              Primary Email: <span>omokugbobr@gmail.com</span>
+            </p>
+            <p class="client__detail">
+              Secondary Email: <span>omokugboboro@hotmail.com</span>
+            </p>
+            <p class="client__detail">
+              Primary Phone Number: <span>09068982847</span>
+            </p>
+            <p class="client__detail">
+              Secondary Phone Number: <span>08109507692</span>
+            </p>
+            <p class="client__detail">
+              Wards: <span>Joseph (Year 4), Moses (SS2), Josh (Nursery 1)</span>
+            </p>
+            <div class="client__buttons">
+              <button
+                class="btn btn--small-border client__button"
+                type="button"
+              >
+                <svg class="icon icon--black icon--medium">
+                  <use xlink:href="./sprite.svg#icon-create"></use>
+                </svg>
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="client__wrapper">
+          <div class="detail__overview">
+            <p class="detail__overview__title">
+              The Boro's (Joseph, Omokugbo,...)
+            </p>
+            <svg class="icon--medium icon--black">
+              <use xlink:href="./sprite.svg#icon-cheveron-outline-right"></use>
+            </svg>
+          </div>
+          <div class="detail__full">
+            <p class="client__detail">
+              Address:
+              <span
+                >19 Jadesola Oshodi Street, Aguda, Surulere, Lagos,
+                Nigeria</span
+              >
+            </p>
+            <p class="client__detail">
+              Primary Email: <span>omokugbobr@gmail.com</span>
+            </p>
+            <p class="client__detail">
+              Secondary Email: <span>omokugboboro@hotmail.com</span>
+            </p>
+            <p class="client__detail">
+              Primary Phone Number: <span>09068982847</span>
+            </p>
+            <p class="client__detail">
+              Secondary Phone Number: <span>08109507692</span>
+            </p>
+            <p class="client__detail">
+              Wards: <span>Joseph (Year 4), Moses (SS2), Josh (Nursery 1)</span>
+            </p>
+            <div class="client__buttons">
+              <button
+                class="btn btn--small-border client__button"
+                type="button"
+              >
+                <svg class="icon icon--black icon--medium">
+                  <use xlink:href="./sprite.svg#icon-create"></use>
+                </svg>
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./pillDetails.js"></script>
+  </body>
+</html>
